@@ -1,0 +1,39 @@
+@property --color-a {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: transparent;
+}
+@property --color-b {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: transparent;
+}
+@property --color-c {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: transparent;
+}
+.range {
+    appearance: none;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+}
+.range::-webkit-slider-thumb {
+    appearance: none;
+    width: 36px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--color-b);
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+.range::-moz-range-thumb {
+    appearance: none;
+    background: var(--color-b);
+    border: 2px solid white;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    cursor: pointer;
+}
